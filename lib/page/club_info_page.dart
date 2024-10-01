@@ -154,7 +154,7 @@ final standingFutureProvider =
   var request = http.Request(
       'GET',
       Uri.parse(
-          'https://api-football-v1.p.rapidapi.com/v3/teams/statistics?league=39&team=$id&season=2023'));
+          'https://api-football-v1.p.rapidapi.com/v3/teams/statistics?league=39&team=$id&season=2024'));
 
   request.headers.addAll(headers);
 

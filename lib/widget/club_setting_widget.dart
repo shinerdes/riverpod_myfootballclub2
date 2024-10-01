@@ -16,7 +16,6 @@ class ClubSettingWidget extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final clubIndex = ref.watch(clubIndexProvider);
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
       child: Container(
@@ -52,15 +51,6 @@ class ClubSettingWidget extends ConsumerWidget {
               ),
               child: InkWell(
                 onTap: () async {
-                  // print('siuu');
-
-                  // setIndex(widget.index);
-
-                  // ref
-                  //     .read(clubsProvider.notifier)
-                  //     .changeClub(Club(index: widget.index));
-                  // //context.replace("/home");
-
                   ref.read(clubIndexProvider.notifier).changeIndex(index);
                   context.pop();
                 },
